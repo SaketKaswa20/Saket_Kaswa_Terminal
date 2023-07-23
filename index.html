@@ -1,0 +1,59 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Terminal</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Additional custom styles to adjust input alignment */
+    .input-container {
+      display: flex;
+      align-items: center;
+    }
+
+    /* Custom blinking animation for the cursor */
+    @keyframes blink {
+      50% {
+        background-color: transparent;
+      }
+    }
+
+    .terminal-input {
+      caret-color: transparent;
+      animation: blink 1s step-end infinite;
+    }
+
+    /* Custom style for terminal output */
+    #output {
+      color: #4CAF50; /* Use a green color that blends with the dark theme */
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+  <div class="container mx-auto px-4 mt-8">
+
+    <div class="flex items-center mb-4">
+      <div class="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
+      <div class="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
+      <div class="w-3 h-3 rounded-full bg-green-500"></div>
+    </div>
+
+    <div class="terminal bg-black p-4 rounded-lg shadow-lg">
+      <pre class="text-white font-mono text-sm leading-tight mb-2" id="output"></pre>
+      <div class="input-container">
+        <span class="text-white font-mono text-sm leading-tight pr-2" id="prompt">$ saket-kaswa >></span>
+        <input type="text" class="terminal-input bg-transparent text-white font-mono text-sm leading-tight outline-none" id="input" autofocus />
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
