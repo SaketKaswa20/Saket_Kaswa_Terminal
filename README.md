@@ -6,7 +6,7 @@ A web-based terminal inspired by Mac's terminal. This terminal allows you to exe
 
 ## Live Demo
 
-You can try out the live demo of the terminal [here](saketkaswa20.github.io/Saket_Kaswa_Terminal/).
+You can try out the live demo of the terminal [here](https://saketkaswa20.github.io/Saket_Kaswa_Terminal/).
 
 ## Features
 
