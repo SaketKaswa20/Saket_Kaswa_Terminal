@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
       printOutput('github - Open GitHub profile');
       printOutput('linkedin - Open LinkedIn profile');
     } else {
-      printOutput(`Command not found: ${command}`);
+      printOutput(`Command not found [Use 'help'] : ${command}`);
     }
   }
 
